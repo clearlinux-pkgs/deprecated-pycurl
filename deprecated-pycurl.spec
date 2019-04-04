@@ -4,7 +4,7 @@
 #
 Name     : deprecated-pycurl
 Version  : 7.43.0.2
-Release  : 57
+Release  : 58
 URL      : https://dl.bintray.com/pycurl/pycurl/pycurl-7.43.0.2.tar.gz
 Source0  : https://dl.bintray.com/pycurl/pycurl/pycurl-7.43.0.2.tar.gz
 Summary  : PycURL -- A Python Interface To The cURL library
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554325767
+export SOURCE_DATE_EPOCH=1554343939
 export MAKEFLAGS=%{?_smp_mflags}
 python2 setup.py build -b py2 --with-ssl
 
@@ -84,38 +84,38 @@ python2 -tt setup.py build -b py2 install --root=%{buildroot}
 
 %files doc
 %defattr(0644,root,root,0755)
-/usr/share/doc/pycurl/AUTHORS
-/usr/share/doc/pycurl/COPYING-LGPL
-/usr/share/doc/pycurl/COPYING-MIT
-/usr/share/doc/pycurl/ChangeLog
-/usr/share/doc/pycurl/INSTALL.rst
-/usr/share/doc/pycurl/README.rst
-/usr/share/doc/pycurl/RELEASE-NOTES.rst
-/usr/share/doc/pycurl/examples/basicfirst.py
-/usr/share/doc/pycurl/examples/file_upload.py
-/usr/share/doc/pycurl/examples/linksys.py
-/usr/share/doc/pycurl/examples/opensocketexception.py
-/usr/share/doc/pycurl/examples/quickstart/file_upload_buffer.py
-/usr/share/doc/pycurl/examples/quickstart/file_upload_real.py
-/usr/share/doc/pycurl/examples/quickstart/file_upload_real_fancy.py
-/usr/share/doc/pycurl/examples/quickstart/follow_redirect.py
-/usr/share/doc/pycurl/examples/quickstart/form_post.py
-/usr/share/doc/pycurl/examples/quickstart/get.py
-/usr/share/doc/pycurl/examples/quickstart/get_python2.py
-/usr/share/doc/pycurl/examples/quickstart/get_python2_https.py
-/usr/share/doc/pycurl/examples/quickstart/get_python3.py
-/usr/share/doc/pycurl/examples/quickstart/get_python3_https.py
-/usr/share/doc/pycurl/examples/quickstart/put_buffer.py
-/usr/share/doc/pycurl/examples/quickstart/put_file.py
-/usr/share/doc/pycurl/examples/quickstart/response_headers.py
-/usr/share/doc/pycurl/examples/quickstart/response_info.py
-/usr/share/doc/pycurl/examples/quickstart/write_file.py
-/usr/share/doc/pycurl/examples/retriever-multi.py
-/usr/share/doc/pycurl/examples/retriever.py
-/usr/share/doc/pycurl/examples/sfquery.py
-/usr/share/doc/pycurl/examples/smtp.py
-/usr/share/doc/pycurl/examples/ssh_keyfunction.py
-/usr/share/doc/pycurl/examples/xmlrpc_curl.py
+%exclude /usr/share/doc/pycurl/AUTHORS
+%exclude /usr/share/doc/pycurl/COPYING-LGPL
+%exclude /usr/share/doc/pycurl/COPYING-MIT
+%exclude /usr/share/doc/pycurl/ChangeLog
+%exclude /usr/share/doc/pycurl/INSTALL.rst
+%exclude /usr/share/doc/pycurl/README.rst
+%exclude /usr/share/doc/pycurl/RELEASE-NOTES.rst
+%exclude /usr/share/doc/pycurl/examples/basicfirst.py
+%exclude /usr/share/doc/pycurl/examples/file_upload.py
+%exclude /usr/share/doc/pycurl/examples/linksys.py
+%exclude /usr/share/doc/pycurl/examples/opensocketexception.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/file_upload_buffer.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/file_upload_real.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/file_upload_real_fancy.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/follow_redirect.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/form_post.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/get.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/get_python2.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/get_python2_https.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/get_python3.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/get_python3_https.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/put_buffer.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/put_file.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/response_headers.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/response_info.py
+%exclude /usr/share/doc/pycurl/examples/quickstart/write_file.py
+%exclude /usr/share/doc/pycurl/examples/retriever-multi.py
+%exclude /usr/share/doc/pycurl/examples/retriever.py
+%exclude /usr/share/doc/pycurl/examples/sfquery.py
+%exclude /usr/share/doc/pycurl/examples/smtp.py
+%exclude /usr/share/doc/pycurl/examples/ssh_keyfunction.py
+%exclude /usr/share/doc/pycurl/examples/xmlrpc_curl.py
 
 %files legacypython
 %defattr(-,root,root,-)
